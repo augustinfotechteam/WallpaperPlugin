@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     id="com.purplemad.WallpaperPlugin"
-    version="1.0.0">
-	<engines>
-    	<engine name="cordova" version=">=3.0.0"/>
-	</engines>
+    version="0.1.0">
     <name>WallpaperPlugin</name>
     <description>Plugin for setting image as an wallpaper/saving an image on internal storage.</description>
     <license>Apache 2.0 License</license>
