@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.purplemad.WallpaperPlugin"
+    version="1.0.0">
+	<engines>
+    	<engine name="cordova" version=">=3.0.0"/>
+	</engines>
+    <name>WallpaperPlugin</name>
+    <description>Plugin for setting image as an wallpaper/saving an image on internal storage.</description>
+    <license>Apache 2.0 License</license>
+    <keywords>wallpaper,image,download,picture</keywords>
+ 
+    <js-module src="www/wallpaper.js" name="Wallpaper">
+        <clobbers target="window.wallpaper" />
+    </js-module>
+ 
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Wallpaper">
+                <param name="android-package" value="com.purplemad.WallpaperPlugin.Wallpaper"/>
+            </feature>
+        </config-file>
+ 		<config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    		<uses-permission android:name="android.permission.INTERNET"/>
+    		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        </config-file>
+        <source-file src="src/android/Wallpaper.java" target-dir="com/purplemad/WallpaperPlugin/Wallpaper" />     
+     </platform>         
+</plugin>
