@@ -10,7 +10,7 @@
     
     
     <js-module src="www/wallpaper.js" name="Wallpaper">
-        <clobbers target="window.wallpaper" />
+        <clobbers target="window.calendar" />
     </js-module>
     
     <!-- android -->
