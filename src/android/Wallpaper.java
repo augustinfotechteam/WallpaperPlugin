@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.purplemad.WallpaperPlugin;
+package com.purplemad.wallpaper;
 
 import java.io.BufferedOutputStream;
 import java.io.File;

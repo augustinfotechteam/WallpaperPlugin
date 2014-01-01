@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="org.devgirl.calendar"
+    id="com.purplemad.wallpaper"
     version="0.1.0">
-    <name>Calendar</name>
-    <description>Sample PhoneGap Calendar Plugin</description>
+    <name>WallpaperPlugin</name>
+    <description>Plugin to set image as wallpaper as well as save image in storage or only store image in storage.</description>
     <license>MIT</license>
-    <keywords>phonegap,calendar</keywords>
+    <keywords>phonegap,wallpaper</keywords>
     
     
     <js-module src="www/wallpaper.js" name="Wallpaper">
-        <clobbers target="window.calendar" />
+        <clobbers target="window.wallpaper" />
     </js-module>
     
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Wallpaper">
-                <param name="android-package" value="org.devgirl.calendar.Wallpaper"/>
+                <param name="android-package" value="com.purplemad.wallpaper.Wallpaper"/>
             </feature>
         </config-file>
         
-        <source-file src="src/android/Wallpaper.java" target-dir="src/org/devgirl/calendar" />
+        <source-file src="src/android/Wallpaper.java" target-dir="src/com/purplemad/wallpaper" />
     </platform>
 </plugin>
