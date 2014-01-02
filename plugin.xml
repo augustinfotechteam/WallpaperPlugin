@@ -8,7 +8,9 @@
     <description>Plugin to set image as wallpaper as well as save image in storage or only store image in storage.</description>
     <license>MIT</license>
     <keywords>phonegap,wallpaper</keywords>
-    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
     
     <js-module src="www/wallpaper.js" name="Wallpaper">
         <clobbers target="window.wallpaper" />
