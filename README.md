@@ -1,6 +1,6 @@
 # PhoneGap Wallpaper plugin
 
-for Android, by []()	aakash
+for Android, by [purpleMAD](http://www.purplemad.ca/)
 
 1. [Description](https://github.com/augustinfotechteam/WallpaperPlugin#1-description)
 2. [Installation](https://github.com/augustinfotechteam/WallpaperPlugin#2-installation)
@@ -15,7 +15,6 @@ This plugin is used to set image(local/remote) as wallpaper & save image in inte
 
 * Works with PhoneGap >= 3.0.
 * Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman).
-* [Officially supported by PhoneGap Build](https://build.phonegap.com/plugins/100).	aakash
 
 ### Android specifics
 * User can call two function a. wallpaper.setImage (for saving image and set as wallpaper) b. wallpaper.saveImage (just for saving image) and pass parameters as (imagePath, imageTitle, folderName, success, error) where imagePath = local/remote image path, imageTitle = image title you wanna provide, folderName = folder name you want to create on internal storage, success (on success do something…) and error (on error do something…)
